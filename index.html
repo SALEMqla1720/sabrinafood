@@ -45,14 +45,6 @@
     </nav>
 </header>
 
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-2xl">☰</button>
-            </div>
-        </div>
-    </nav>
-</header>
-
 
     <!-- Hero Section -->
 <section id="home" class="relative py-20 hero-pattern">
@@ -80,303 +72,241 @@
 
     <!-- Hero Image -->
     <div class="md:w-1/2">
-      <div class="relative">
-        <img src="img/logo.png" alt="Gambar donat" 
-             class="rounded-3xl shadow-2xl w-full" />
+      <div class="relative w-full max-w-sm mx-auto"> <img src="img/logo.png" alt="Gambar donat" 
+         class="rounded-3xl shadow-2xl w-full" />
       </div>
     </div>
 
   </div>
 </section>
-<!-- Menu Section -->
-  <section id="menu" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Menu Kami</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Pilihan terbaik donat dan bola mie dengan cita rasa yang tak terlupakan</p>
-    </div>
-
-<!-- Donut Menu -->
-<section id="donuts" class="py-20 bg-white">
+<section id="menu" class="py-20 bg-white">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pilihan Donat</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Menu Kami</h2>
       <p class="text-gray-600 max-w-2xl mx-auto">
-        12 pilihan donat spesial dengan rasa yang unik dan lezat
+        Pilihan terbaik donat dan bola mie dengan cita rasa yang tak terlupakan
       </p>
     </div>
 
-    <!-- Grid Donuts -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      
-      <!-- Donut 1 -->
-      <div class="product-card bg-white">
-        <img src="img/strawberry.jpg" alt="Donat Strawberry"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Strawberry</h4>
-          <p class="text-gray-600 mb-4">Donat glaze strawberry lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+    <div id="donuts" class="mb-20">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Pilihan Donat</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          12 pilihan donat spesial dengan rasa yang unik dan lezat
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="product-card bg-white">
+          <img src="img/strawberry.jpg" alt="Donat Strawberry" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Strawberry</h4>
+            <p class="text-gray-600 mb-4">Donat glaze strawberry lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/strawberry_meses.jpg" alt="Strawberry Meses" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">strawberry meses</h4>
+            <p class="text-gray-600 mb-4">Donat glaze strawberry dengan taburan meses lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/coklat.jpg" alt="Donat Coklat" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Coklat</h4>
+            <p class="text-gray-600 mb-4">Donat dengan glaze coklat lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/coklat_meses.jpg" alt="Coklat Meses" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Coklat Meses</h4>
+            <p class="text-gray-600 mb-4">Donat glaze coklat dengan taburan meses lezat dan empuk rasanya </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/matcha.jpg" alt="Donat Matcha" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Matcha</h4>
+            <p class="text-gray-600 mb-4">Donat glaze mactha lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/tiramisu.jpg" alt="Donat Tiramisu" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Tiramisu</h4>
+            <p class="text-gray-600 mb-4">Donat glaze tiramisu lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/gula_halus.jpg" alt="Donat gula_halus" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Gula Halus</h4>
+            <p class="text-gray-600 mb-4">Donat gula halus dengan taburan gula salju lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/original.jpg" alt="Donat Original" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Original</h4>
+            <p class="text-gray-600 mb-4">Donat Original lezat dan empuk rasanya </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/keju.png" alt="Donat Mangga" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Keju</h4>
+            <p class="text-gray-600 mb-4">Donat selai keju lezat dan empuk rasanya </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/taro.png" alt="Donat taro" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Taro</h4>
+            <p class="text-gray-600 mb-4">Donat rasa taro lezat dan empuk rasanya </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/taro.png" alt="Donat taro meses" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Taro Meses</h4>
+            <p class="text-gray-600 mb-4">Donat rasa taro dengan taburan meses lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/cappucino.png" alt="Donat Pisang" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Cappucino</h4>
+            <p class="text-gray-600 mb-4">Donat cappucino lezat dan empuk rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Donut 2 -->
-      <div class="product-card bg-white">
-        <img src="img/strawberry_meses.jpg" alt="Strawberry Meses"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">strawberry meses</h4>
-          <p class="text-gray-600 mb-4">Donat glaze strawberry dengan taburan meses lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 3 -->
-      <div class="product-card bg-white">
-        <img src="img/coklat.jpg" alt="Donat Coklat"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Coklat</h4>
-          <p class="text-gray-600 mb-4">Donat dengan glaze coklat lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 4 -->
-      <div class="product-card bg-white">
-        <img src="img/coklat_meses.jpg" alt="Coklat Meses"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Coklat Meses</h4>
-          <p class="text-gray-600 mb-4">Donat glaze coklat dengan taburan meses lezat dan empuk rasanya </p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 5 -->
-      <div class="product-card bg-white">
-        <img src="img/matcha.jpg" alt="Donat Matcha"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Matcha</h4>
-          <p class="text-gray-600 mb-4">Donat glaze mactha lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 6 -->
-      <div class="product-card bg-white">
-        <img src="img/tiramisu.jpg" alt="Donat Tiramisu"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Tiramisu</h4>
-          <p class="text-gray-600 mb-4">Donat glaze tiramisu lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 7 -->
-      <div class="product-card bg-white">
-        <img src="img/gula_halus.jpg" alt="Donat gula_halus"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Gula Halus</h4>
-          <p class="text-gray-600 mb-4">Donat gula halus dengan taburan gula salju lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 8 -->
-      <div class="product-card bg-white">
-        <img src="img/original.jpg" alt="Donat Original"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Original</h4>
-          <p class="text-gray-600 mb-4">Donat Original lezat dan empuk rasanya </p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 9 -->
-      <div class="product-card bg-white">
-        <img src="img/keju.png" alt="Donat Mangga"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Keju</h4>
-          <p class="text-gray-600 mb-4">Donat selai keju lezat dan empuk rasanya </p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 10 -->
-      <div class="product-card bg-white">
-        <img src="img/taro.png" alt="Donat taro"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Taro</h4>
-          <p class="text-gray-600 mb-4">Donat rasa taro lezat dan empuk rasanya </p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 11 -->
-      <div class="product-card bg-white">
-        <img src="img/taro.png" alt="Donat taro meses"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Taro Meses</h4>
-          <p class="text-gray-600 mb-4">Donat rasa taro dengan taburan meses lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Donut 12 -->
-      <div class="product-card bg-white">
-        <img src="img/cappucino.png" alt="Donat Pisang"
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Cappucino</h4>
-          <p class="text-gray-600 mb-4">Donat cappucino lezat dan empuk rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-
-    <!-- Bola Mie Section -->
-<section id="bola-mie" class="py-20 bg-gray-50">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Bola Mie Spesial</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Camilan unik berbentuk bola  mie dengan carambel tepung roti berbagai varian rasa favorit, serta ada pilihan sambel geprek, daun jeruk, dan kecap.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      
-      <!-- Bola Mie 1 -->
-      <div class="product-card bg-white">
-        <img src="img/ori.jpg" alt="Bola Mie Original" 
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Bola Mie Original</h4>
-          <p class="text-gray-600 mb-4">Bola mie goreng dengan bumbu rahasia enak dan lezat rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 2.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+    
+    <div id="bola-mie" class="mb-20">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Bola Mie Spesial</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Camilan unik berbentuk bola mie dengan carambel tepung roti berbagai varian rasa favorit, serta ada pilihan sambel geprek, daun jeruk, dan kecap.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="product-card bg-white">
+          <img src="img/ori.jpg" alt="Bola Mie Original" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Bola Mie Original</h4>
+            <p class="text-gray-600 mb-4">Bola mie goreng dengan bumbu rahasia enak dan lezat rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 2.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/ayam.png" alt="Bola Mie Ayam" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Bola Mie Ayam</h4>
+            <p class="text-gray-600 mb-4">Bola mie ayam dengan bumbu rahasia enak dan lezat rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/puyuh.jpg" alt="Bola Mie puyuh" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Bola Mie Telur Puyuh</h4>
+            <p class="text-gray-600 mb-4">Bola mie telur puyuh dengan bumbu rahasia enak dan lezat rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card bg-white">
+          <img src="img/baso.jpg" alt="Bola Mie Baso" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Bola Mie baso</h4>
+            <p class="text-gray-600 mb-4">Bola mie baso dengan bumbu rahasia enak dan lezat rasanya</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Bola Mie 2 -->
-      <div class="product-card bg-white">
-        <img src="img/ayam.png" alt="Bola Mie Ayam" 
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Bola Mie Ayam</h4>
-          <p class="text-gray-600 mb-4">Bola mie ayam dengan bumbu rahasia enak dan lezat rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bola Mie 3 -->
-      <div class="product-card bg-white">
-        <img src="img/puyuh.jpg" alt="Bola Mie puyuh" 
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Bola Mie Telur Puyuh</h4>
-          <p class="text-gray-600 mb-4">Bola mie telur puyuh dengan bumbu rahasia enak dan lezat rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bola Mie 4 -->
-      <div class="product-card bg-white">
-        <img src="img/baso.jpg" alt="Bola Mie Baso" 
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Bola Mie baso</h4>
-          <p class="text-gray-600 mb-4">Bola mie baso dengan bumbu rahasia enak dan lezat rasanya</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- Menu Tambahan -->
-<section id="menu-tambahan" class="py-20 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Menu Tambahan</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Camilan pelengkap spesial yang renyah, gurih, dan bikin nagih
-      </p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Jamur Enoki Crispy -->
-      <div class="product-card bg-white">
-        <img src="img/jamur.jpg" alt="Jamur Enoki Crispy Goreng" 
-             class="w-full h-48 object-cover" />
-        <div class="p-6">
-          <h4 class="font-bold text-lg mb-2">Jamur Enoki Crispy isi 4</h4>
-          <p class="text-gray-600 mb-4">Jamur enoki goreng tepung yang gurih dan renyah, cocok untuk camilan ataupun lauk.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-pink-600">Rp 12.000</span>
-            <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+    <div id="menu-tambahan">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Menu Tambahan</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Camilan pelengkap spesial yang renyah, gurih, dan bikin nagih
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="product-card bg-white">
+          <img src="img/jamur.jpg" alt="Jamur Enoki Crispy Goreng" class="w-full h-48 object-cover rounded-t-2xl" />
+          <div class="p-6">
+            <h4 class="font-bold text-lg mb-2">Jamur Enoki Crispy isi 4</h4>
+            <p class="text-gray-600 mb-4">Jamur enoki goreng tepung yang gurih dan renyah, cocok untuk camilan ataupun lauk.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-pink-600">Rp 12.000</span>
+              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -410,7 +340,7 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lokasi Kami</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Pesan online untuk pengalaman terbaik</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">esan online untuk pengalaman terbaik</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -616,11 +546,7 @@
   </div>
 </footer>
 
-
-
     <!-- JavaScript Eksternal -->
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
