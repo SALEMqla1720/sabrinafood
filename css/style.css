@@ -3,191 +3,219 @@
 
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #fff5e6 0%, #ffe6f2 50%, #e6f7ff 100%);
-  min-height: 100vh;
-  line-height: 1.6;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe6f2 50%, #e6f7ff 100%);
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
 /* Container universal */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
 }
 
 /* Gradient background */
 .gradient-bg {
-  background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
 }
 
 /* Produk card */
 .product-card {
-  transition: all 0.3s ease;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 /* Upload area */
 .upload-area {
-  border: 3px dashed #4ecdc4;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  text-align: center;
-  padding: 20px;
+    border: 3px dashed #4ecdc4;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 20px;
 }
 
 .upload-area:hover {
-  border-color: #ff6b6b;
-  background: rgba(255, 107, 107, 0.05);
+    border-color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.05);
 }
 
 /* Button */
 .btn-primary,
 .btn-secondary {
-  transition: all 0.3s ease;
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
 }
 
 .btn-secondary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
 }
 
 /* Hero pattern */
 .hero-pattern {
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
 }
 
 /* Social Icon */
 .social-icon {
-  transition: all 0.3s ease;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .instagram {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
 .whatsapp {
-  background: linear-gradient(45deg, #25D366, #128C7E);
+    background: linear-gradient(45deg, #25D366, #128C7E);
 }
 
 .email {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #667eea, #764ba2);
 }
 
 /* Map container */
 .map-container {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 /* Responsive Image */
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ========================= */
 /* RESPONSIVE MEDIA QUERIES  */
 /* ========================= */
 
-/* Tablet */
-@media (max-width: 768px) {
-  .product-card {
-    margin-bottom: 20px;
-  }
-
-  .btn-primary, 
-  .btn-secondary {
+/* Mobile Navigation */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 40;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .social-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  h1, h2, h3 {
-    text-align: center;
-  }
-
-  .container {
-    padding: 10px;
-  }
+    padding: 1rem 0;
 }
 
-/* HP */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+.mobile-menu.active {
+    display: flex;
+}
 
-  h2, h3 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+.mobile-menu a {
+    padding: 0.75rem 0;
+    color: #333;
+    font-weight: 500;
+}
 
-  p {
-    font-size: 0.95rem;
-    text-align: center;
-  }
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+    /* Menjadikan semua grid menjadi satu kolom di layar kecil */
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
 
-  .btn-primary, 
-  .btn-secondary {
-    font-size: 14px;
-    padding: 8px 16px;
-    width: 100%;
-  }
+    /* Mengatur layout flexbox menjadi kolom */
+    .flex {
+        flex-direction: column;
+    }
 
-  .social-icon {
-    width: 35px;
-    height: 35px;
-  }
+    .md\:flex {
+        flex-direction: column;
+    }
+
+    /* Menyesuaikan hero section untuk mobile */
+    #home .flex.flex-col.md\:flex-row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    /* Menghilangkan tombol desktop */
+    .md\:hidden {
+        display: block !important;
+    }
+
+    .hidden.md\:flex {
+        display: none !important;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .btn-primary, 
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
 }
