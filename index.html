@@ -22,7 +22,6 @@
     <nav class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
             
-            <!-- Logo / Brand -->
             <div class="text-2xl md:text-3xl font-bold">
                 Sabrina Food 
                 <span class="text-yellow-300 block md:inline">
@@ -30,8 +29,7 @@
                 </span>
             </div>
 
-            <!-- Navigation Links -->
-            <div class="hidden md:flex space-x-8 font-medium">
+            <div id="nav-menu" class="hidden md:flex space-x-8 font-medium">
                 <a href="#home" class="hover:text-yellow-300 transition-colors">Home</a>
                 <a href="#menu" class="hover:text-yellow-300 transition-colors">Menu Kami</a>
                 <a href="#gallery" class="hover:text-yellow-300 transition-colors">Galeri</a>
@@ -39,6 +37,13 @@
                 <a href="#order" class="hover:text-yellow-300 transition-colors">Pesan</a>
                 <a href="#contact" class="hover:text-yellow-300 transition-colors">Kontak</a>
             </div>
+
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-2xl">☰</button>
+            </div>
+        </div>
+    </nav>
+</header>
 
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
@@ -617,3 +622,4 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
