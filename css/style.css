@@ -1,7 +1,7 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Reset */
+/* Reset dan Aturan Dasar */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ body {
     background: linear-gradient(135deg, #fff5e6 0%, #ffe6f2 50%, #e6f7ff 100%);
     min-height: 100vh;
     line-height: 1.6;
+    overflow-x: hidden; /* Tambahan untuk mencegah scroll horizontal yang tidak diinginkan */
 }
 
 /* Container universal */
@@ -23,12 +24,11 @@ body {
     padding: 15px;
 }
 
-/* Gradient background */
+/* Latar Belakang dan Gaya Umum */
 .gradient-bg {
     background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
 }
 
-/* Produk card */
 .product-card {
     transition: all 0.3s ease;
     border-radius: 20px;
@@ -41,7 +41,6 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-/* Upload area */
 .upload-area {
     border: 3px dashed #4ecdc4;
     border-radius: 15px;
@@ -55,7 +54,6 @@ body {
     background: rgba(255, 107, 107, 0.05);
 }
 
-/* Button */
 .btn-primary,
 .btn-secondary {
     transition: all 0.3s ease;
@@ -84,12 +82,10 @@ body {
     box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
 }
 
-/* Hero pattern */
 .hero-pattern {
     background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
 }
 
-/* Social Icon */
 .social-icon {
     transition: all 0.3s ease;
     width: 45px;
@@ -117,14 +113,12 @@ body {
     background: linear-gradient(45deg, #667eea, #764ba2);
 }
 
-/* Map container */
 .map-container {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* Responsive Image */
 img {
     max-width: 100%;
     height: auto;
@@ -160,59 +154,52 @@ img {
     font-weight: 500;
 }
 
-/* Tablet & Mobile */
+/* Tablet & Mobile (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Menjadikan semua grid menjadi satu kolom di layar kecil */
-    .grid {
+    /* Pastikan gambar hero section tidak terpotong */
+    .hero-image-container {
+        padding-bottom: 2rem;
+    }
+
+    /* Mengatasi tata letak flexbox dan grid */
+    .md\:flex,
+    .md\:grid {
+        flex-direction: column;
         grid-template-columns: 1fr !important;
     }
-
-    /* Mengatur layout flexbox menjadi kolom */
-    .flex {
-        flex-direction: column;
-    }
-
-    .md\:flex {
-        flex-direction: column;
-    }
-
-    /* Menyesuaikan hero section untuk mobile */
-    #home .flex.flex-col.md\:flex-row {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
     
-    /* Menghilangkan tombol desktop */
     .md\:hidden {
         display: block !important;
     }
-
+    
     .hidden.md\:flex {
         display: none !important;
     }
 
-    .product-card {
-        margin-bottom: 20px;
+    /* Penataan layout Hero Section */
+    #home .flex-col.md\:flex-row {
+        flex-direction: column-reverse; /* Menggeser gambar ke atas teks */
+        text-align: center;
+    }
+
+    /* Gaya elemen umum */
+    h1, h2, h3, p {
+        text-align: center;
     }
 
     .btn-primary, 
     .btn-secondary {
         width: 100%;
-        text-align: center;
         margin-bottom: 10px;
+    }
+    
+    .product-card {
+        margin-bottom: 20px;
     }
 
     .social-icon {
         width: 40px;
         height: 40px;
-    }
-
-    h1, h2, h3 {
-        text-align: center;
-    }
-    
-    p {
-        text-align: center;
     }
 
     .container {
