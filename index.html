@@ -1,552 +1,304 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Donat & Bola Mie - Delicious Treats</title>
+    <title>Donat & Bola Mie - Sabrina Food</title>
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- CSS Eksternal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="min-h-screen">
-    <!-- Header & Navigation -->
-<header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
-    <nav class="container mx-auto px-6 py-4">
-        <div class="flex justify-between items-center">
-            
-            <div class="text-2xl md:text-3xl font-bold">
-                Sabrina Food 
-                <span class="text-yellow-300 block md:inline">
-                    Cepat, Lezat, Nempel Di Lidah
-                </span>
-            </div>
-
-            <div id="nav-menu" class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-yellow-300 transition-colors">Home</a>
-                <a href="#menu" class="hover:text-yellow-300 transition-colors">Menu Kami</a>
-                <a href="#gallery" class="hover:text-yellow-300 transition-colors">Galeri</a>
-                <a href="#location" class="hover:text-yellow-300 transition-colors">Lokasi</a>
-                <a href="#order" class="hover:text-yellow-300 transition-colors">Pesan</a>
-                <a href="#contact" class="hover:text-yellow-300 transition-colors">Kontak</a>
-            </div>
-
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-2xl">☰</button>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-    <!-- Hero Section -->
-<section id="home" class="relative py-20 hero-pattern">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-    
-    <!-- Hero Text -->
-    <div class="md:w-1/2 mb-10 md:mb-0">
-      <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-        Donat Lezat & <br>
-        <span class="text-transparent bg-clip-text gradient-bg">Bola Mie</span>
-      </h1>
-      <p class="text-gray-600 text-lg mb-8">
-        Nikmati kelezatan donat dan bola mie autentik dengan berbagai pilihan rasa 
-        yang menggugah selera. Dibuat dengan bahan-bahan pilihan dan cinta.
-      </p>
-      <div class="flex space-x-4">
-        <a href="#order" class="btn-primary text-white px-8 py-3 rounded-full font-semibold">
-          Pesan Sekarang
-        </a>
-        <a href="#menu" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold">
-          Lihat Menu
-        </a>
-      </div>
-    </div>
-
-    <!-- Hero Image -->
-    <div class="md:w-1/2">
-      <div class="relative w-full max-w-sm mx-auto"> <img src="img/logo.png" alt="Gambar donat" 
-         class="rounded-3xl shadow-2xl w-full" />
-      </div>
-    </div>
-
-  </div>
-</section>
-<section id="menu" class="py-20 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Menu Kami</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Pilihan terbaik donat dan bola mie dengan cita rasa yang tak terlupakan
-      </p>
-    </div>
-
-    <div id="donuts" class="mb-20">
-      <div class="text-center mb-12">
-        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Pilihan Donat</h3>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          12 pilihan donat spesial dengan rasa yang unik dan lezat
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="product-card bg-white">
-          <img src="img/strawberry.jpg" alt="Donat Strawberry" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Strawberry</h4>
-            <p class="text-gray-600 mb-4">Donat glaze strawberry lezat dan empuk rasanya</p>
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/strawberry_meses.jpg" alt="Strawberry Meses" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">strawberry meses</h4>
-            <p class="text-gray-600 mb-4">Donat glaze strawberry dengan taburan meses lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/coklat.jpg" alt="Donat Coklat" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Coklat</h4>
-            <p class="text-gray-600 mb-4">Donat dengan glaze coklat lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/coklat_meses.jpg" alt="Coklat Meses" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Coklat Meses</h4>
-            <p class="text-gray-600 mb-4">Donat glaze coklat dengan taburan meses lezat dan empuk rasanya </p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/matcha.jpg" alt="Donat Matcha" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Matcha</h4>
-            <p class="text-gray-600 mb-4">Donat glaze mactha lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/tiramisu.jpg" alt="Donat Tiramisu" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Tiramisu</h4>
-            <p class="text-gray-600 mb-4">Donat glaze tiramisu lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/gula_halus.jpg" alt="Donat gula_halus" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Gula Halus</h4>
-            <p class="text-gray-600 mb-4">Donat gula halus dengan taburan gula salju lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/original.jpg" alt="Donat Original" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Original</h4>
-            <p class="text-gray-600 mb-4">Donat Original lezat dan empuk rasanya </p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/keju.png" alt="Donat Mangga" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Keju</h4>
-            <p class="text-gray-600 mb-4">Donat selai keju lezat dan empuk rasanya </p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/taro.png" alt="Donat taro" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Taro</h4>
-            <p class="text-gray-600 mb-4">Donat rasa taro lezat dan empuk rasanya </p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/taro.png" alt="Donat taro meses" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Taro Meses</h4>
-            <p class="text-gray-600 mb-4">Donat rasa taro dengan taburan meses lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/cappucino.png" alt="Donat Pisang" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Cappucino</h4>
-            <p class="text-gray-600 mb-4">Donat cappucino lezat dan empuk rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="bola-mie" class="mb-20">
-      <div class="text-center mb-12">
-        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Bola Mie Spesial</h3>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          Camilan unik berbentuk bola mie dengan carambel tepung roti berbagai varian rasa favorit, serta ada pilihan sambel geprek, daun jeruk, dan kecap.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="product-card bg-white">
-          <img src="img/ori.jpg" alt="Bola Mie Original" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Bola Mie Original</h4>
-            <p class="text-gray-600 mb-4">Bola mie goreng dengan bumbu rahasia enak dan lezat rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 2.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/ayam.png" alt="Bola Mie Ayam" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Bola Mie Ayam</h4>
-            <p class="text-gray-600 mb-4">Bola mie ayam dengan bumbu rahasia enak dan lezat rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/puyuh.jpg" alt="Bola Mie puyuh" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Bola Mie Telur Puyuh</h4>
-            <p class="text-gray-600 mb-4">Bola mie telur puyuh dengan bumbu rahasia enak dan lezat rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card bg-white">
-          <img src="img/baso.jpg" alt="Bola Mie Baso" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Bola Mie baso</h4>
-            <p class="text-gray-600 mb-4">Bola mie baso dengan bumbu rahasia enak dan lezat rasanya</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 3.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="menu-tambahan">
-      <div class="text-center mb-12">
-        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Menu Tambahan</h3>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-          Camilan pelengkap spesial yang renyah, gurih, dan bikin nagih
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="product-card bg-white">
-          <img src="img/jamur.jpg" alt="Jamur Enoki Crispy Goreng" class="w-full h-48 object-cover rounded-t-2xl" />
-          <div class="p-6">
-            <h4 class="font-bold text-lg mb-2">Jamur Enoki Crispy isi 4</h4>
-            <p class="text-gray-600 mb-4">Jamur enoki goreng tepung yang gurih dan renyah, cocok untuk camilan ataupun lauk.</p>
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-pink-600">Rp 12.000</span>
-              <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-           <!-- Gallery Section (Production Version) -->
-  <section id="gallery" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Gallery Kreasi Kami</h2>
-        <p class="text-gray-600">Lihat koleksi foto produk terbaik kami yang fresh dan menggugah selera</p>
-      </div>
-
-      <!-- Gallery Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-2xl overflow-hidden shadow-lg">
-          <img src="img/kreasi_1.jpg" alt="Box donat berbagai rasa dengan packaging cantik dan pita" class="w-full h-64 object-cover" />
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg">
-          <img src="img/jamur.jpg" alt="Bola mie dalam piring saji dengan garnish daun seledri" class="w-full h-64 object-cover" />
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg">
-          <img src="img/puyuh.jpg" alt="Proses pembuatan donat di dapur profesional" class="w-full h-64 object-cover" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- Location Section with Google Maps -->
-    <section id="location" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lokasi Kami</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">esan online untuk pengalaman terbaik</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Temukan Kami</h3>
-                    <div class="space-y-4 text-gray-600">
-                        <p class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl"></i>
-                            <span>The Green Cigadung Wetan, Kota Bandung</span>
-                        </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-clock text-blue-500 mr-3 text-xl"></i>
-                            <span>Kamis - Minggu: 09:00 - 21:00</span>
-                        </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-phone text-green-500 mr-3 text-xl"></i>
-                            <span>+62 858-0971-6700</span>
-                        </p>
-                    </div>
-                    
-                    <div class="mt-8">
-                        <h4 class="text-xl font-semibold mb-4">Layanan Kami</h4>
-                        <ul class="space-y-2 text-gray-600">
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                                <span>Pesan Antar (Delivery)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                                <span>Take Away</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
-                                <span>Catering untuk Acara</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="text-xl md:text-2xl font-bold">
+                    <a href="#home">Sabrina Food</a>
+                    <span class="text-sm md:text-base font-normal text-yellow-300 block">
+                        Cepat, Lezat, Nempel Di Lidah
+                    </span>
                 </div>
 
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1449.0183093557253!2d107.6291116840479!3d-6.8895814302196134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-6.890200513739839!2d107.63023126940966!5e1!3m2!1sid!2ssg!4v1756692599437!5m2!1sid!2ssg"
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="rounded-2xl">
-                    </iframe>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="#menu" class="hover:text-yellow-300 transition-colors">Menu</a>
+                    <a href="#gallery" class="hover:text-yellow-300 transition-colors">Galeri</a>
+                    <a href="#location" class="hover:text-yellow-300 transition-colors">Lokasi</a>
+                    <a href="#order" class="hover:text-yellow-300 transition-colors">Pesan</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-2xl">☰</button>
+                </div>
+            </div>
+             <div id="nav-menu" class="hidden md:hidden mt-4">
+                <a href="#home" class="block py-2 text-center hover:bg-white/10 rounded">Home</a>
+                <a href="#menu" class="block py-2 text-center hover:bg-white/10 rounded">Menu</a>
+                <a href="#gallery" class="block py-2 text-center hover:bg-white/10 rounded">Galeri</a>
+                <a href="#location" class="block py-2 text-center hover:bg-white/10 rounded">Lokasi</a>
+                <a href="#order" class="block py-2 text-center hover:bg-white/10 rounded">Pesan</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="py-20">
+        <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Donat Lezat & <br>
+                    <span class="text-transparent bg-clip-text gradient-bg">Bola Mie</span>
+                </h1>
+                <p class="text-gray-600 text-base md:text-lg mb-8">
+                    Nikmati kelezatan donat dan bola mie autentik dengan berbagai pilihan rasa yang menggugah selera. Dibuat dengan bahan-bahan pilihan dan cinta.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#order" class="btn-primary text-white px-8 py-3 rounded-full font-semibold">
+                        Pesan Sekarang
+                    </a>
+                    <a href="#menu" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold">
+                        Lihat Menu
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2">
+                <div class="relative w-full max-w-sm mx-auto">
+                    <img src="img/logo.png" alt="Gambar donat" class="rounded-3xl shadow-2xl w-full" />
                 </div>
             </div>
         </div>
     </section>
 
-   <!-- Contact & Order Section -->
-    <section id="order" class="py-24 bg-gray-50">
-  <div class="container mx-auto px-6">
-<section id="contact" class="py-24 bg-gray-50">
-  <div class="container mx-auto px-6">
-    <!-- Judul -->
-    <div class="text-center mb-20">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">Pesan Sekarang</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Hubungi kami untuk pemesanan atau informasi lebih lanjut
-      </p>
-    </div>
+    <section id="menu" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Menu Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pilihan terbaik donat dan bola mie dengan cita rasa yang tak terlupakan.</p>
+            </div>
 
-    <div class="grid md:grid-cols-2 gap-12">
-      <!-- Informasi Pemesanan -->
-      <div class="bg-white shadow-xl rounded-3xl p-10 flex flex-col justify-between">
-        <div>
-          <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">Informasi Pemesanan</h3>
-          <ul class="text-lg text-gray-700 space-y-6">
-            <li>✅ 1 Box isi <strong>6 pcs</strong> bisa pilih <strong>1 rasa</strong> atau <strong>mix berbagai rasa</strong></li>
-            <li>
-              ✅ Catatan pesanan:
-              <ul class="list-disc list-inside ml-6 space-y-1">
-                <li>Bola Mie Sambal Geprek</li>
-                <li>Bola Mie Sambal Daun Jeruk</li>
-                <li>Bola Mie Sambal Kecap</li>
-                <li>Bola Mie bisa digeprek / tidak digeprek</li>
-              </ul>
-            </li>
-            <li>
-              💳 Metode Pembayaran:
-              <ul class="list-disc list-inside ml-6 space-y-1">
-                <li>OVO</li>
-                <li>GoPay</li>
-                <li>Transfer BCA</li>
-                <li>Transfer Mandiri</li>
-                <li>COD (Bayar di Tempat)</li>
-              </ul>
-            </li>
-          </ul>
+            <div id="donuts" class="mb-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Pilihan Donat</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">12 pilihan donat spesial dengan rasa yang unik dan lezat.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="product-card bg-white">
+                        <img src="img/strawberry.jpg" alt="Donat Strawberry" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-2">Strawberry</h4>
+                            <p class="text-gray-600 text-sm mb-4">Donat glaze strawberry lezat dan empuk rasanya.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-pink-600">Rp 3.000</span>
+                                <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white">
+                        <img src="img/strawberry_meses.jpg" alt="Strawberry Meses" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-2">Strawberry Meses</h4>
+                            <p class="text-gray-600 text-sm mb-4">Donat glaze strawberry dengan taburan meses lezat.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-pink-600">Rp 3.000</span>
+                                <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white">
+                        <img src="img/coklat.jpg" alt="Donat Coklat" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-2">Coklat</h4>
+                            <p class="text-gray-600 text-sm mb-4">Donat dengan glaze coklat lezat dan empuk rasanya.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-pink-600">Rp 3.000</span>
+                                <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                     </div>
+            </div>
+
+            <div id="bola-mie" class="mb-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Bola Mie Spesial</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Camilan unik dengan berbagai varian rasa dan pilihan sambal.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="product-card bg-white">
+                        <img src="img/ori.jpg" alt="Bola Mie Original" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-2">Bola Mie Original</h4>
+                            <p class="text-gray-600 text-sm mb-4">Bola mie goreng dengan bumbu rahasia enak dan lezat.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-pink-600">Rp 2.000</span>
+                                <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                     </div>
+            </div>
+
+             <div id="menu-tambahan">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Menu Tambahan</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Camilan pelengkap spesial yang renyah, gurih, dan bikin nagih.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <div class="product-card bg-white">
+                        <img src="img/jamur.jpg" alt="Jamur Enoki Crispy" class="w-full h-48 object-cover"/>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-2">Jamur Enoki Crispy isi 4</h4>
+                            <p class="text-gray-600 text-sm mb-4">Jamur enoki goreng tepung yang gurih dan renyah.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-pink-600">Rp 12.000</span>
+                                <a href="#order" class="btn-primary text-white px-4 py-2 rounded-full text-sm">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Tombol CTA WhatsApp -->
-        <div class="text-center mt-10">
-          <a href="https://wa.me/6285809716700?text=Halo%20kak%2C%20saya%20mau%20pesan%201%20box%20DonatMie%20isi%206%20pcs%20mix%20rasa"
-             target="_blank"
-             class="inline-block bg-pink-500 hover:bg-pink-600 text-white text-xl font-semibold px-10 py-4 rounded-full shadow-lg transition">
-            📲 Pesan via WhatsApp
-          </a>
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Galeri Kreasi Kami</h2>
+                <p class="text-gray-600">Lihat koleksi foto produk terbaik kami yang fresh dan menggugah selera.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg"><img src="img/kreasi_1.jpg" alt="Box donat" class="w-full h-64 object-cover"></div>
+                <div class="rounded-2xl overflow-hidden shadow-lg"><img src="img/jamur.jpg" alt="Bola mie" class="w-full h-64 object-cover"></div>
+                <div class="rounded-2xl overflow-hidden shadow-lg"><img src="img/puyuh.jpg" alt="Proses pembuatan" class="w-full h-64 object-cover"></div>
+            </div>
         </div>
-      </div>
+    </section>
 
-          <!-- Kontak Langsung -->
-    <div class="bg-white p-10 rounded-3xl shadow-xl w-full h-full flex flex-col justify-center">
-      <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">Kontak Langsung</h3>
-      
-      <!-- Profil -->
-      <div class="text-center mb-10">
-        <div class="w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden border-4 border-pink-500 shadow-md">
-          <img src="img/logo.png" alt="Pemilik DonatMie Delight" class="w-full h-full object-cover" />
+    <section id="location" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lokasi Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pesan online untuk pengalaman terbaik.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Temukan Kami</h3>
+                    <div class="space-y-4 text-gray-600">
+                        <p class="flex items-start"><i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl w-5 text-center"></i> <span>The Green Cigadung Wetan, Kota Bandung</span></p>
+                        <p class="flex items-start"><i class="fas fa-clock text-blue-500 mr-3 text-xl w-5 text-center"></i> <span>Kamis - Minggu: 09:00 - 21:00</span></p>
+                        <p class="flex items-start"><i class="fas fa-phone text-green-500 mr-3 text-xl w-5 text-center"></i> <span>+62 858-0971-6700</span></p>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4">Layanan Kami</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> <span>Pesan Antar (Delivery)</span></li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> <span>Take Away</span></li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> <span>Catering untuk Acara</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.043993385704!2d107.6322283153597!3d-6.88523399502446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e71b268b69c5%3A0xe54c7406606005d5!2sThe%20Green%20Cigandul%20Wetan!5e0!3m2!1sen!2sid!4fv1663742918231!5m2!1sen!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"></iframe>
+                </div>
+            </div>
         </div>
-        <h4 class="text-2xl font-semibold text-gray-800">Sabrina Food</h4>
-        <p class="text-gray-600 text-lg">Pemilik</p>
-      </div>
+    </section>
 
-      <!-- List Kontak -->
-      <div class="space-y-6">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6285809716700" target="_blank" 
-          class="flex items-center p-5 bg-gray-50 rounded-xl hover:bg-green-50 hover:shadow-md transition">
-          <div class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white mr-5">
-            <i class="fab fa-whatsapp text-2xl"></i>
-          </div>
-          <div>
-            <h5 class="font-semibold text-lg">WhatsApp</h5>
-            <p class="text-gray-600 text-lg">+62 858 0971 6700</p>
-          </div>
-        </a>
+    <section id="order" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">Pesan & Hubungi Kami</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hubungi kami untuk pemesanan atau informasi lebih lanjut.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 shadow-xl rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Informasi Pemesanan</h3>
+                        <ul class="text-base text-gray-700 space-y-6">
+                            <li>✅ 1 Box isi <strong>6 pcs</strong> bisa pilih <strong>1 rasa</strong> atau <strong>mix</strong>.</li>
+                            <li>✅ Catatan pesanan:
+                                <ul class="list-disc list-inside ml-6 space-y-1 mt-2">
+                                    <li>Pilihan sambal: Geprek, Daun Jeruk, Kecap.</li>
+                                    <li>Bola Mie bisa digeprek / tidak.</li>
+                                </ul>
+                            </li>
+                            <li>💳 Metode Pembayaran:
+                                <ul class="list-disc list-inside ml-6 space-y-1 mt-2">
+                                    <li>OVO, GoPay, Transfer BCA/Mandiri, COD.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt-10">
+                        <a href="https://wa.me/6285809716700?text=Halo%20kak%2C%20saya%20mau%20pesan%20donat/bola%20mie." target="_blank" class="inline-block bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold px-10 py-4 rounded-full shadow-lg transition">
+                            📲 Pesan via WhatsApp
+                        </a>
+                    </div>
+                </div>
 
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/heyoaqil?igsh=OXYxZ251OTN0MmJj" target="_blank" 
-          class="flex items-center p-5 bg-gray-50 rounded-xl hover:bg-pink-50 hover:shadow-md transition">
-          <div class="w-14 h-14 bg-gradient-to-tr from-pink-500 to-yellow-500 rounded-full flex items-center justify-center text-white mr-5">
-            <i class="fab fa-instagram text-2xl"></i>
-          </div>
-          <div>
-            <h5 class="font-semibold text-lg">Instagram</h5>
-            <p class="text-gray-600 text-lg">@heyoaqil?igsh</p>
-          </div>
-        </a>
+                <div class="bg-gray-50 p-8 rounded-3xl shadow-xl flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Kontak Langsung</h3>
+                    <div class="text-center mb-10">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-pink-500 shadow-md">
+                            <img src="img/logo.png" alt="Sabrina Food" class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">Sabrina Food</h4>
+                        <p class="text-gray-600">Pemilik</p>
+                    </div>
+                    <div class="space-y-4">
+                        <a href="https://wa.me/6285809716700" target="_blank" class="flex items-center p-4 bg-white rounded-xl hover:bg-green-50 hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white mr-4"><i class="fab fa-whatsapp text-2xl"></i></div>
+                            <div>
+                                <h5 class="font-semibold">WhatsApp</h5>
+                                <p class="text-gray-600 text-sm">+62 858 0971 6700</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/heyoaqil?igsh=OXYxZ251OTN0MmJj" target="_blank" class="flex items-center p-4 bg-white rounded-xl hover:bg-pink-50 hover:shadow-md transition">
+                             <div class="w-12 h-12 bg-gradient-to-tr from-pink-500 to-yellow-500 rounded-full flex items-center justify-center text-white mr-4"><i class="fab fa-instagram text-2xl"></i></div>
+                            <div>
+                                <h5 class="font-semibold">Instagram</h5>
+                                <p class="text-gray-600 text-sm">@heyoaqil</p>
+                            </div>
+                        </a>
+                         <a href="mailto:sabrinafood07@gmail.com" class="flex items-center p-4 bg-white rounded-xl hover:bg-blue-50 hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white mr-4"><i class="fas fa-envelope text-2xl"></i></div>
+                            <div>
+                                <h5 class="font-semibold">Email</h5>
+                                <p class="text-gray-600 text-sm">sabrinafood07@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Email -->
-        <a href="mailto:info@donatmiedelight.com" 
-          class="flex items-center p-5 bg-gray-50 rounded-xl hover:bg-blue-50 hover:shadow-md transition">
-          <div class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white mr-5">
-            <i class="fas fa-envelope text-2xl"></i>
-          </div>
-          <div>
-            <h5 class="font-semibold text-lg">Email</h5>
-            <p class="text-gray-600 text-lg">sabrinafood07@gmail.com</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-<!-- Pastikan semua div dari section atas sudah ditutup sebelum footer -->
+    <footer class="w-full bg-gradient-to-r from-red-400 via-gray-700 to-teal-400 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">Terhubung dengan Kami</h3>
+            <p class="mb-6 max-w-2xl mx-auto text-white/80">Ikuti kami di media sosial untuk update terbaru dan promo spesial!</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://wa.me/6285809716700" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-600 transition transform hover:scale-110 shadow-md"><i class="fab fa-whatsapp text-2xl"></i></a>
+                <a href="https://www.instagram.com/heyoaqil?igsh=OXYxZ251OTN0MmJj" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:opacity-90 transition transform hover:scale-110 shadow-md"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="mailto:sabrinafood07@gmail.com" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 transition transform hover:scale-110 shadow-md"><i class="fas fa-envelope text-2xl"></i></a>
+            </div>
+            <div class="border-t border-white/20 pt-6">
+                <p class="text-sm text-white/70">© 2025 <span class="font-semibold">SabrinaFood</span>. All rights reserved. Made with <span class="text-pink-300">❤️</span></p>
+            </div>
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer class="w-full bg-gradient-to-r from-red-400 via-gray-700 to-teal-400 text-white py-12 mt-12">
-  <div class="max-w-6xl mx-auto px-6">
-    <!-- Konten Tengah -->
-    <div class="text-center">
-      <!-- Judul -->
-      <h3 class="text-2xl font-bold mb-4">Terhubung dengan Kami</h3>
-      <p class="mb-6 max-w-2xl mx-auto text-white/80">
-        Ikuti kami di media sosial untuk update terbaru, promo spesial, dan inspirasi makanan lezat!
-      </p>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
 
-      <!-- Ikon Sosial -->
-      <div class="flex justify-center space-x-6 mb-8">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6285809716700" target="_blank"
-           class="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-600 transition transform hover:scale-110 shadow-md">
-          <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/heyoaqil?igsh=OXYxZ251OTN0MmJj" target="_blank"
-           class="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:opacity-90 transition transform hover:scale-110 shadow-md">
-          <i class="fab fa-instagram text-2xl"></i>
-        </a>
-
-        <!-- Email -->
-        <a href="mailto:sabrinafood07@gmail.com"
-           class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 transition transform hover:scale-110 shadow-md">
-          <i class="fas fa-envelope text-2xl"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Garis + Copyright -->
-    <div class="border-t border-white/20 pt-6 text-center">
-      <p class="text-sm text-white/70">
-        © 2025 <span class="font-semibold">SabrinaFood</span>. All rights reserved. 
-        Made with <span class="text-pink-300">❤️</span> for food lovers
-      </p>
-    </div>
-  </div>
-</footer>
-
-    <!-- JavaScript Eksternal -->
-    <script src="js/script.js"></script>
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
